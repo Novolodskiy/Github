@@ -1,0 +1,228 @@
+ 4. Создать файл “new.json”
+user@MacBook-Pro-User DZ_git % touch new.json
+
+ 5. Добавить файл под гит.
+user@MacBook-Pro-User DZ_git % git add new.json
+
+ 6. Закоммитить файл.
+
+user@MacBook-Pro-User DZ_git % git commit -m "create new.json"
+[main 6f475fe] create new.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+ 7. Отправить файл на внешний GitHub репозиторий.
+user@MacBook-Pro-User DZ_git % git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Novolodskiy/DZ_git.git
+   120694b..6f475fe  main -> main
+
+ 8. Создать файлы new2.json, new2.xml, new2.txt
+user@MacBook-Pro-User DZ_git % touch new2.json new2.xml new2.txt 
+
+ 9. Добавить файлы под гит.
+user@MacBook-Pro-User DZ_git % git add . 
+
+ 10. Закоммитить файлы.
+user@MacBook-Pro-User DZ_git % git commit -m "create new fils"  
+[main 2f3e9e7] create new fils
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new2.json
+ create mode 100644 new2.txt
+ create mode 100644 new2.xml
+
+ 11. Отправить файлы на внешний GitHub репозиторий.
+user@MacBook-Pro-User DZ_git % git push                         
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Novolodskiy/DZ_git.git
+   6f475fe..2f3e9e7  main -> main
+{
+ 12. Отредактировать содержание файла “new2.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+user@MacBook-Pro-User DZ_git % vim new2.txt
+
+Новолодский Дмитрий Алексеевич
+мне 31 год
+У меня двое домашних животных
+В будущем я бы хотел получать 15000$ в месяц
+~                                                                                                                     
+~                                                                                                                     
+~                                                                                                                     
+~                                                                                                                     
+~                                                 
+ 13. Отредактировать содержание файла “new2.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+{
+Novolodsky Dmitry Alekseevich
+I am 31 years old
+I have two pets
+In the future, I would like to receive $15,000 per month
+}
+
+ 14. Добавить и закоммитить “new2.txt” одной строчкой. 
+ 15. Добавить и закоммитить “new2.json” одной строчкой. 
+user@MacBook-Pro-User DZ_git % git commit -am "create new2.txt"
+[main ad80978] create new2.txt
+ 2 files changed, 12 insertions(+)
+
+ 16. Отправить изменения на внешний репозиторий.
+user@MacBook-Pro-User DZ_git % git push                         
+Everything up-to-date
+user@MacBook-Pro-User DZ_git % git status                       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+ 17. Отредактировать содержание файла “new2.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+user@MacBook-Pro-User DZ_git % vim new2.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <title>Новолодский Дмитрий Алексеевич</title>
+    <title>Мне 31 год</title>
+    <title>У меня двое домашних животных</title>
+    <title>В будущем я бы хотел получать 15000$ в месяц</title>
+</root>
+
+ 18. Добавить и закоммитить “new2.xml” одной строчкой.
+user@MacBook-Pro-User DZ_git % git commit -am "create new2.xml" 
+[main be7ac94] create new2.xml
+ 2 files changed, 8 insertions(+)
+ 
+ 19. Отправить изменения на внешний репозиторий
+user@MacBook-Pro-User DZ_git % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 570 bytes | 570.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Novolodskiy/DZ_git.git
+   ad80978..be7ac94  main -> main
+
+ 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий.
+Уже сделал
+
+ 21. В веб интерфейсе GitHub создать файл new3.txt.
+Видео git1
+
+ 22. Отредактировать в веб интерфейсе содержание файла “new3.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить).
+ 23. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Видео git2
+
+
+24. Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) 
+
+user@MacBook-Pro-User DZ_git % git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), 2.96 KiB | 336.00 KiB/s, done.
+From https://github.com/Novolodskiy/DZ_git
+   1d2741f..d53c1f8  main       -> origin/main
+Updating 1d2741f..d53c1f8
+Fast-forward
+ new3.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+ 25. Отредактировать в веб интерфейсе содержание файла “new2.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+ 26. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Видео 25,26
+
+ 27. Синхронизировать внешний и локальный репозитории 
+user@MacBook-Pro-User DZ_git % git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.51 KiB | 257.00 KiB/s, done.
+From https://github.com/Novolodskiy/DZ_git
+   d53c1f8..9f8f417  main       -> origin/main
+Updating d53c1f8..9f8f417
+Fast-forward
+ new2.json | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+ 28. Отредактировать в веб интерфейсе содержание файла “new2.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
+ 29. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Видео 28,29
+
+ 30. Синхронизировать внешний и локальный репозитории 
+user@MacBook-Pro-User DZ_git % git pull     
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 985 bytes | 246.00 KiB/s, done.
+From https://github.com/Novolodskiy/DZ_git
+   9f8f417..d4dc64b  main       -> origin/main
+Updating 9f8f417..d4dc64b
+Fast-forward
+ new2.xml | 5 +++++
+ 1 file changed, 5 insertions(+)
+user@MacBook-Pro-User DZ_git % ls -la       
+total 88
+drwxr-xr-x@ 14 user  staff   448 22 июн 16:32 .
+drwxr-xr-x@  5 user  staff   160 22 июн 16:32 ..
+-rw-r--r--@  1 user  staff  6148 23 июн 20:41 .DS_Store
+drwxr-xr-x@ 15 user  staff   480 22 июн 16:32 .git
+-rw-r--r--   1 user  staff     0 23 июн 15:19 12.txt
+-rw-r--r--   1 user  staff     8 22 июн 16:32 README.md
+-rw-r--r--   1 user  staff  4465 23 июн 15:07 bag_report.txt
+-rw-r--r--   1 user  staff     7 23 июн 15:19 checkList.txt
+-rw-r--r--   1 user  staff     0 23 июн 16:03 new.json
+-rw-r--r--   1 user  staff   365 23 июн 20:38 new2.json
+-rw-r--r--@  1 user  staff   207 23 июн 17:00 new2.txt
+-rw-r--r--   1 user  staff   665 23 июн 20:41 new2.xml
+-rw-r--r--   1 user  staff   234 23 июн 20:26 new3.txt
+-rw-r--r--   1 user  staff     7 22 июн 16:39 test.txt
+user@MacBook-Pro-User DZ_git % vim new2.xml
+
+Данные для заполнения и редактирования файлов можете использовать любые, не обязательно свои.

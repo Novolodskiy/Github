@@ -1,0 +1,255 @@
+GitHub. HW_1
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+user@MacBook-Pro-User DZ_git % git branch                                                                 
+  DZ_git2
+* main
+user@MacBook-Pro-User DZ_git % git branch Postman
+user@MacBook-Pro-User DZ_git % git branch Jmeter 
+user@MacBook-Pro-User DZ_git % git branch CheckLists
+user@MacBook-Pro-User DZ_git % git branch Bag_Reports
+user@MacBook-Pro-User DZ_git % git branch SQL        
+user@MacBook-Pro-User DZ_git % git branch Charles    
+user@MacBook-Pro-User DZ_git % git branch Mobile_testing
+user@MacBook-Pro-User DZ_git % git branch               
+  Bag_Reports
+  Charles
+  CheckLists
+  DZ_git2
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+
+2. Запушить все ветки на внешний репозиторий
+
+user@MacBook-Pro-User DZ_git % git push -u origin Postman Jmeter CheckLists Bag_Reports SQL Charles Mobile_testing
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Novolodskiy/DZ_git.git
+ * [new branch]      Postman -> Postman
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Bag_Reports -> Bag_Reports
+ * [new branch]      SQL -> SQL
+ * [new branch]      Charles -> Charles
+ * [new branch]      Mobile_testing -> Mobile_testing
+Branch 'Postman' set up to track remote branch 'Postman' from 'origin'.
+Branch 'Jmeter' set up to track remote branch 'Jmeter' from 'origin'.
+Branch 'CheckLists' set up to track remote branch 'CheckLists' from 'origin'.
+Branch 'Bag_Reports' set up to track remote branch 'Bag_Reports' from 'origin'.
+Branch 'SQL' set up to track remote branch 'SQL' from 'origin'.
+Branch 'Charles' set up to track remote branch 'Charles' from 'origin'.
+Branch 'Mobile_testing' set up to track remote branch 'Mobile_testing' from 'origin'.
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+user@MacBook-Pro-User DZ_git % git checkout Bag_Reports                                                           
+Switched to branch 'Bag_Reports'
+Your branch is up to date with 'origin/Bag_Reports'.
+user@MacBook-Pro-User DZ_git % git branch              
+* Bag_Reports
+  Charles
+  CheckLists
+  DZ_git2
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+  main
+user@MacBook-Pro-User DZ_git % touch bag_report.txt
+user@MacBook-Pro-User DZ_git % vim bag_report.txt
+
+Inset 
+
+Шапка -
+
+Summary : - Короткое описание проблемы, явно указывающее на причину и тип ошибочной ситуации.
+Project : - Название тестируемого проекта
+Component : - Название части или функции тестируемого продукта
+Version : - Версия на которой была найдена ошибка
+Severity : - Наиболее распространена пятиуровневая система градации серьезности дефекта:
+
+             S1 Блокирующий (Blocker)
+             S2 Критический (Critical)
+             S3 Значительный (Major)
+             S4 Незначительный (Minor)
+             S5 Тривиальный (Trivial)
+
+Priority : - Приоритет дефекта:
+
+             P1 Высокий (High)
+             P2 Средний (Medium)
+             P3 Низкий (Low)
+
+Статус (Status) : - Статус бага. Зависит от используемой процедуры и жизненного цикла бага
+                    (bug workflow and life cycle)
+
+Автор (Author) : - Создатель баг репорта
+
+Назначен на (Assigned To) : - Имя сотрудника, назначенного на решение проблемы
+
+
+Окружение -
+
+ОС / Сервис Пак и т.д.      : - Информация об окружении, на котором был найден баг: операционная система, сервис пак,                                 для WEB тестирования - имя и версия браузера и т.д.
+/ Браузера + версия / ...
+
+Описание -
+
+Шаги воспроизведения : - Шаги, по которым можно легко воспроизвести ситуацию, приведшую к ошибке.
+(Steps to Reproduce)
+
+Фактический Результат : - Результат, полученный после прохождения шагов к воспроизведению
+ (Result)
+
+Ожидаемый результат : - Ожидаемый правильный результат
+(Expected Result)
+
+Дополнение -
+
+Прикрепленный файл : - Файл с логами, скриншот или любой другой документ, который может помочь прояснить причину ошибк(Attachment)                       и или указать на способ решения проблемы
+
+
+Esc; ":" wq enter
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+user@MacBook-Pro-User DZ_git % git add .
+user@MacBook-Pro-User DZ_git % git commit -m "bag_report"
+[Bag_Reports 291d9c0] bag_report
+ 1 file changed, 80 insertions(+)
+ create mode 100644 bag_report.txt
+user@MacBook-Pro-User DZ_git % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.45 KiB | 1.45 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Novolodskiy/DZ_git.git
+   1877f6c..291d9c0  Bag_Reports -> Bag_Reports
+user@MacBook-Pro-User DZ_git % 
+
+5. Вмержить ветку Bag Reports в Main
+
+user@MacBook-Pro-User DZ_git % git checkout main         
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+user@MacBook-Pro-User DZ_git % git branch 
+  Bag_Reports
+  Charles
+  CheckLists
+  DZ_git2
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+user@MacBook-Pro-User DZ_git % git merge Bag_Reports
+Updating 1877f6c..291d9c0
+Fast-forward
+ bag_report.txt | 80 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 80 insertions(+)
+ create mode 100644 bag_report.txt
+user@MacBook-Pro-User DZ_git % ls -la
+total 32
+drwxr-xr-x@  6 user  staff   192 22 июн 17:53 .
+drwxr-xr-x@  5 user  staff   160 22 июн 16:32 ..
+drwxr-xr-x@ 14 user  staff   448 22 июн 17:53 .git
+-rw-r--r--   1 user  staff     8 22 июн 16:32 README.md
+-rw-r--r--   1 user  staff  4465 22 июн 17:53 bag_report.txt
+-rw-r--r--   1 user  staff     7 22 июн 16:39 test.txt
+
+6. Запушить main на внешний репозиторий.
+
+user@MacBook-Pro-User DZ_git % git push                  
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Novolodskiy/DZ_git.git
+   1877f6c..291d9c0  main -> main
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+user@MacBook-Pro-User DZ_git % git branch             
+  Bag_Reports
+  Charles
+* CheckLists
+  DZ_git2
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+  main
+user@MacBook-Pro-User DZ_git % touch checkList.txt
+user@MacBook-Pro-User DZ_git % vim checklist.txt
+
+8. Запушить структуру на внешний репозиторий
+
+ user@MacBook-Pro-User DZ_git % git add .
+user@MacBook-Pro-User DZ_git % git commit -m "checklist"
+[CheckLists e02e367] checklist
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 checkList.txt
+user@MacBook-Pro-User DZ_git % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Novolodskiy/DZ_git.git
+   1877f6c..e02e367  CheckLists -> CheckLists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ 
+Видео в telegram
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+user@MacBook-Pro-User DZ_git % git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Updating 291d9c0..120694b
+Fast-forward
+ 12.txt        | 0
+ checkList.txt | 1 +
+ 2 files changed, 1 insertion(+)
+ create mode 100644 12.txt
+ create mode 100644 checkList.txt
+user@MacBook-Pro-User DZ_git % git branch       
+  Bag_Reports
+  Charles
+  CheckLists
+  DZ_git2
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+user@MacBook-Pro-User DZ_git % ls -la
+total 40
+drwxr-xr-x@  8 user  staff   256 23 июн 15:19 .
+drwxr-xr-x@  5 user  staff   160 22 июн 16:32 ..
+drwxr-xr-x@ 15 user  staff   480 23 июн 15:19 .git
+-rw-r--r--   1 user  staff     0 23 июн 15:19 12.txt
+-rw-r--r--   1 user  staff     8 22 июн 16:32 README.md
+-rw-r--r--   1 user  staff  4465 23 июн 15:07 bag_report.txt
+-rw-r--r--   1 user  staff     7 23 июн 15:19 checkList.txt
