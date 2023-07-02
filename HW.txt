@@ -242,14 +242,4 @@ user@MacBook-Pro-User DZ_git % git branch
   Jmeter
   Mobile_testing
   Postman
-  SQL
-* main
-user@MacBook-Pro-User DZ_git % ls -la
-total 40
-drwxr-xr-x@  8 user  staff   256 23 июн 15:19 .
-drwxr-xr-x@  5 user  staff   160 22 июн 16:32 ..
-drwxr-xr-x@ 15 user  staff   480 23 июн 15:19 .git
--rw-r--r--   1 user  staff     0 23 июн 15:19 12.txt
--rw-r--r--   1 user  staff     8 22 июн 16:32 README.md
--rw-r--r--   1 user  staff  4465 23 июн 15:07 bag_report.txt
--rw-r--r--   1 user  staff     7 23 июн 15:19 checkList.txt
+
